@@ -58,9 +58,15 @@ myAvg = myAvg.groupby(['movie_id', 'title'])['rating'].agg(
 print('My info ratings: \n%s' % myAvg[:10])
 print('\n==================================================================\n')
 
+#c'est un commentaire 
 
 # Sort data ratings by created field (groupby + lambda function + sorted)
-sortRatingsField_A_D = cloneDF(mergeRatings)
-sortRatingsField_A_D= sortRatingsField_A_D.groupby(['movie_id', 'title'])['rating'].agg(
-    COUNT=np.size, myAVG=lambda x: x.sum() / float(x.count())).sort_values('COUNT', ascending=False)
-print('My info sorted: \n%s' % sortRatingsField_A_D[:15])
+sortRatingsField_D = cloneDF(mergeRatings)
+#sortRatingsField_D= sortRatingsField_D.groupby(['movie_id', 'title'])['rating'].agg(
+ #   COUNT=np.size, myAVG=lambda x: x.sum() / float(x.count())).sort_values('COUNT', ascending=False)
+
+#c'est un commentaire 
+
+print('My info sorted: \n%s' % sortRatingsField_D[:15])
+
+#c'est un commentaire 
